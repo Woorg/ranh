@@ -1,0 +1,108 @@
+.video
+	background-color #0c3048
+	&__in
+		padding-top 35px
+		padding-bottom 22px
+		@extend .in
+	&__title
+		position relative
+		margin-bottom 8px
+		font-family $calibri
+		font-size 36px
+		line-height 1.2
+		text-transform uppercase
+		color #fff
+		&:after
+			position absolute
+			top 50%
+			left 0
+			margin-top -5px
+			width 100%
+			height 3px
+			content ""
+			background-color #fff
+			z-index 0
+		span
+			position relative
+			padding-right 5px
+			display inline-block
+			background-color #0c3048
+			letter-spacing tracking(111)
+			z-index 1
+	&__w
+		position relative
+		// padding-left ratio-percentage(655,1226)
+		font-size 0
+		clearfix()
+	&__w-w
+		// margin-left ratio-percentage(-30,570)
+		float right
+		width ratio-percentage(570,1226)
+		overflow hidden
+	&__item
+		margin-right ratio-percentage(28,570)
+		margin-bottom 20px
+		display inline-block
+		vertical-align top
+		width ratio-percentage(270,570)
+		&:nth-child(2n)
+			margin-right 0
+	&__item_big
+		position absolute
+		top 0
+		left 0
+		margin-left 0
+		margin-right 0
+		margin-bottom 0
+		width ratio-percentage(620,1226)
+	&__link
+		display block
+		text-decoration none
+	&__embed
+		position relative
+		margin-bottom 8px
+		padding-bottom 62%
+		display block
+		height 0
+		img
+		video
+		iframe
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+	&__image-fade
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color rgba(255,255,255,0)
+		visibility hidden
+		transition all .3s ease
+	&__play-icon
+		position absolute
+		top 50%
+		left 50%
+		margin-top -31px
+		margin-left -31px
+		bg($play-small)
+		z-index 1
+	&__play-icon_big
+		margin-top -52px
+		margin-left -52px
+		bg($play-big)
+	&__item-title
+		font-family $calibri
+		font-size 18px
+		font-weight 400
+		color #FFF
+	&__link
+		&:hover
+			.video__image-fade
+				visibility visible
+				background-color rgba(255,255,255,.5)
+
+
+

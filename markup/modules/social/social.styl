@@ -1,0 +1,97 @@
+.social
+	display block
+	&__in
+		padding-top 56px
+		padding-bottom 65px
+		@extend .in
+		clearfix()
+	&__title
+		position relative
+		margin-bottom 20px
+		font-family $calibri
+		font-size 36px
+		line-height 1.2
+		text-transform uppercase
+		color #951a1d
+		&:after
+			position absolute
+			top 50%
+			left 0
+			margin-top -5px
+			width 100%
+			height 3px
+			content ""
+			background-color #911316
+			z-index 0
+		span
+			position relative
+			padding-right 6px
+			display inline-block
+			background-color #fff
+			letter-spacing tracking(111)
+			z-index 1
+	&__w
+		padding-top 23px
+		float left
+		width ratio-percentage(460,1226)
+	&__subtitle
+		margin-bottom 16px
+		float left
+		// font-family $calibri
+		font-size 33px
+		font-weight 300
+		line-height 38px
+		color #911316
+		span
+			display block
+			font-weight 700
+	&__list
+		float left
+		clear left
+		clearfix()
+		font-size 0
+	&__item
+		margin-right 12px
+		display inline-block
+		vertical-align top
+		&_1
+			bg($social-1)
+		&_2
+			bg($social-2)
+		&_3
+			bg($social-3)
+		&_4
+			bg($social-4)
+		&_5
+			bg($social-5)
+		&_6
+			bg($social-6)
+.tweet
+	float right
+	width ratio-percentage(760,1226)
+	// width 760px
+	height 294px
+	background url('../images/general/tweet-frame.png') 0 0 no-repeat
+	background-size contain
+	&__link
+		display block
+		height 100%
+		text-decoration none
+	&__text
+		padding-top ratio-percentage(34,1226)
+		padding-right ratio-percentage(80,1226)
+		padding-bottom ratio-percentage(30,1226)
+		padding-left ratio-percentage(51,1226)
+		display block
+		height 180px
+		font-family $calibri
+		font-size 200%
+		line-height 1.7
+		color #6e6e6e
+		strong
+			font-weight 700
+			text-decoration underline
+		span
+			font-weight 700
+
+

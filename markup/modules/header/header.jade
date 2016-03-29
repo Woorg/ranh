@@ -1,0 +1,15 @@
+mixin header(data)
+	+b('header').header
+		+e.in
+			+e.body
+				+b('a').logo(href='#logo' title='#')
+				+e('h1').title МЕНЕДЖМЕНТ
+				+b.faculty ФАКУЛЬТЕТ экономических и социальных наук
+		+b('nav').main-nav
+			+e.in
+				+e('ul').list
+					- var mainNavLinks = {'1': 'Главная','2' :'Факультет','3' : 'Кафедры','4' : 'Наука','5' : 'Учеба','6' : 'Партнеры','7' : 'Новости','8' : 'Контакты'}
+					each v,i in mainNavLinks
+						+e('li')(class="item _#{i}")
+							+e('a').link(href='#link' title='') #{v}
+

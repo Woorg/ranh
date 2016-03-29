@@ -1,0 +1,104 @@
+.diplomas
+	display block
+	&__in
+		padding-top 40px
+		padding-bottom 40px
+		@extend .in
+	&__title
+		position relative
+		margin-bottom 18px
+		font-family $calibri
+		font-size 36px
+		line-height 1.2
+		text-transform uppercase
+		color #911316
+		&:after
+			position absolute
+			top 50%
+			left 0
+			margin-top -5px
+			width 100%
+			height 3px
+			content ""
+			background-color #911316
+			z-index 0
+		span
+			position relative
+			padding-right 5px
+			display inline-block
+			background-color #fff
+			letter-spacing tracking(111)
+			z-index 1
+	&__list
+		clearfix()
+	&__w
+		float left
+		width ratio-percentage(845,1226)
+		font-size 0
+		clearfix()
+	&__w-w
+		position relative
+		padding-top 44px
+		padding-bottom 44px
+		float right
+		width ratio-percentage(364,1226)
+		height 510px
+		background-color #e8e6e7
+		text-align center
+	// &__w-w-w
+
+	&__item
+		position relative
+		margin-right ratio-percentage(56,1226)
+		margin-bottom 80px
+		display inline-block
+		vertical-align top
+		width ratio-percentage(246,845)
+		height 170px
+		cursor pointer
+		&:nth-child(3n)
+			margin-right 0
+		img
+			max-width 100%
+			height 100%
+	&__item_big
+		margin auto
+		margin-right 0
+		margin-bottom 0
+		width ratio-percentage(202,364)
+		height 285px
+	// &__item-image
+		// text-align center
+	&__item-caption
+		position absolute
+		top 0
+		left 0
+		right 0
+		width 100%
+		height 100%
+		display table
+		visibility hidden
+		background rgba(255,255,255,0)
+		transition background .6s ease
+		span
+			padding 0 20px
+			display table-cell
+			vertical-align middle
+			font-family $calibri
+			font-size 18px
+			font-weight 700
+			line-height 22px
+			text-align center
+			color #000
+			visibility hidden
+			transition opacity .10s ease
+	&__item
+		&:hover
+			.diplomas__item-caption
+				visibility visible
+				background rgba(255,255,255,.5)
+				span
+					visibility visible
+
+
+

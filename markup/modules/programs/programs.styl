@@ -1,0 +1,153 @@
+.programs
+	&__in
+		padding-top 20px
+		padding-bottom 40px
+		@extend .in
+	&__title
+		position relative
+		margin-bottom 20px
+		font-family $calibri
+		font-size 36px
+		line-height 1.2
+		text-transform uppercase
+		color #385c86
+		&:after
+			position absolute
+			top 50%
+			left 0
+			margin-top -5px
+			width 100%
+			height 3px
+			content ""
+			background-color #385c86
+			z-index 0
+		span
+			position relative
+			padding-right 5px
+			display inline-block
+			background #FFF
+			letter-spacing tracking(111)
+			z-index 1
+	&__list
+		clearfix()
+	&__item
+		margin-left ratio-percentage(22px,1226)
+		float left
+		width ratio-percentage(394 , 1226)
+		&:first-child
+			margin-left 0
+	&__item-image
+		position relative
+		img
+			width 100%
+			height 100%
+	&__item-menu
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		visibility hidden
+		text-align center
+		background rgba(255,255,255,0)
+		transition all .3s ease
+	&__menu-list
+		margin-top 40px
+		display inline-block
+		visibility hidden
+	&__menu-item
+		margin-bottom 10px
+		text-align left
+		&_1
+			.programs__menu-icon
+				bg($icon-shape)
+		&_2
+			.programs__menu-icon
+				bg($icon-schedule)
+		&_3
+			.programs__menu-icon
+				bg($icon-plan)
+		&_4
+			.programs__menu-icon
+				bg($icon-create)
+		&_5
+			.programs__menu-icon
+				bg($icon-shape)
+		&_6
+			.programs__menu-icon
+				bg($icon-user2)
+		&_7
+			.programs__menu-icon
+				bg($icon-HNP)
+		&_8
+			.programs__menu-icon
+				bg($icon-graph)
+		&_9
+			.programs__menu-icon
+				bg($icon-shape)
+
+	&__menu-link
+		text-decoration none
+		display block
+		color #000000
+		&:hover
+			color #951A1D
+			.programs__menu-text
+				text-decoration underline
+	&__menu-icon
+		display inline-block
+		vertical-align middle
+	&__menu-text
+		margin-left 10px
+		display inline-block
+		vertical-align middle
+		font-size 16px
+		font-weight 400
+	&__item-bottom
+		padding-top 18px
+		padding-bottom 10px
+	&__item-title
+		position relative
+		padding-left 68px
+		display block
+		clearfix()
+		text-decoration none
+		&:hover
+			.programs__item-note
+				text-decoration none
+	&__item-icon
+		position absolute
+		top 0
+		left 0
+		display block
+		&_1
+			bg($signin-icon)
+		&_2
+			bg($form-icon)
+		&_3
+			bg($questions-icon)
+	&__item-text
+		margin-top 7px
+		margin-bottom 4px
+		display inline-block
+		font-weight 100
+		font-size 30px
+		line-height 1
+		color #911316
+		text-transform uppercase
+	&__item-note
+		display block
+		font-size 18px
+		font-weight 400
+		color #6a6a6a
+		text-decoration underline
+
+
+.programs__item-menu_active
+	display inline-block
+	visibility visible
+	background-color rgba(255,255,255,0.75)
+	z-index 1
+	.programs__menu-list
+		visibility visible
+

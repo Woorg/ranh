@@ -1,0 +1,53 @@
+.header
+	&__in
+		@extend .in
+	&__body
+		padding-top 8px
+		padding-bottom 17px
+		min-height 100px
+		text-align center
+		cleafix()
+	&__title
+		margin-top 25px
+		margin-left 22px
+		display inline-block
+		bg($header-title)
+		hide-text()
+.logo
+	margin-top 4px
+	float left
+	bg($logo)
+.faculty
+	margin-top -1px
+	float right
+	bg($faculty)
+	hide-text()
+.main-nav
+	height 46px
+	background-color #911316
+	text-align center
+	&__in
+		@extend .in
+	&__list
+		padding-top 12px
+		padding-bottom 9px
+		display table
+		width 100%
+		clearfix()
+	&__item
+		display table-cell
+		width 12.5%
+		text-align center
+	&__link
+		font-family $calibri
+		font-size 20px
+		font-weight 400
+		line-height 1.2
+		color #FFF
+		text-transform uppercase
+		text-decoration none
+		&:hover
+			text-decoration underline
+
+
+

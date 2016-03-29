@@ -1,0 +1,47 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../modules/bemto/bemto
+
+	include ../modules/head/head
+	include ../modules/topline/topline
+	include ../modules/header/header
+	include ../modules/hero/hero
+
+	include ../modules/programs/programs
+	include ../modules/news/news
+	include ../modules/comments/comments
+	include ../modules/info/info
+	include ../modules/video/video
+	include ../modules/diplomas/diplomas
+	include ../modules/student-life/student-life
+	include ../modules/social/social
+
+	include ../modules/example/example
+	include ../modules/footer/footer
+
+	head
+		+head(head.defaults)
+	body.page
+		|%=symbols=%
+
+		+topline()
+		+header()
+		+hero()
+
+		+programs()
+		+news()
+		+comments()
+		+info()
+		+video()
+		+diplomas()
+		+student-life()
+		+social()
+
+		+footer()
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

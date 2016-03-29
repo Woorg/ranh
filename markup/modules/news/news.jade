@@ -1,0 +1,62 @@
+mixin news(data)
+	+b('section').news
+		+e.in
+			+e('h2').title <span>Новости</span>
+
+			+e('ul').list
+				+e('li').item._wide
+					+e('a').item-link(href='#link')
+						+e('span').item-image
+							+e('img')(src='assets/images/content/news-1.jpg' alt='')
+							//- +e('img')(src='http://placehold.it/618x213' alt='')
+							+e.image-fade
+							+e('span').item-badge подробнее
+						+e('span').item-bottom
+							+e('h3').item-title СЕКЦИЯ АНГЛИЙСКОГО ЯЗЫКА
+							+e('p').item-text 17 февраля 2015 г. на физико-математическом факультете состоялось событие, которого ждали студенты и преподаватели
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e('span').item-image
+							+e('img')(src='assets/images/content/news-2.jpg' alt='')
+							//- +e('img')(src='http://placehold.it/270x213' alt='image')
+							+e.image-fade
+							+e('span').item-badge подробнее
+						+e('span').item-bottom
+							+e('h3').item-title Презентация каждого бизнес-проекта
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e('span').item-image
+							+e('img')(src='assets/images/content/news-3.jpg' alt='')
+							//- +e('img')(src='http://placehold.it/270x213' alt='image')
+							+e.image-fade
+							+e('span').item-badge подробнее
+						+e('span').item-bottom
+							+e('h3').item-title Презентация каждого бизнес-проекта
+				+e('li').item._wide
+					+e('a').item-link(href='#link')
+						+e('span').item-image
+							+e('img')(src='assets/images/content/news-4.jpg' alt='')
+							//- +e('img')(src='http://placehold.it/618x213.jpg' alt='image')
+							+e.image-fade
+							+e('span').item-badge подробнее
+						+e('span').item-bottom
+							+e('h3').item-title СЕКЦИЯ АНГЛИЙСКОГО ЯЗЫКА
+							+e('p').item-text 17 февраля 2015 г. на физико-математическом факультете состоялось событие, которого ждали студенты и преподаватели
+
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e('span').item-image
+							+e('img')(src='assets/images/content/news-5.jpg' alt='image')
+							+e.image-fade
+							+e('span').item-badge подробнее
+						+e('span').item-bottom
+							+e('h3').item-title Презентация каждого бизнес-проекта
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e('span').item-image
+							+e('img')(src='assets/images/content/news-6.jpg' alt='image')
+							+e.image-fade
+							+e('span').item-badge подробнее
+						+e('span').item-bottom
+							+e('h3').item-title Презентация каждого бизнес-проекта
+

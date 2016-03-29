@@ -1,0 +1,31 @@
+mixin student-life(data)
+	+b('section').student-life
+		+e.in
+
+			+e('h2').title <span>Студенческая жизнь</span>
+
+			+e('ul').list
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e.item-image
+							+e('img')(src='assets/images/content/student-img-1.jpg' alt='photo')
+							+e.image-fade
+						+e.item-title
+							+e.item-icon._1
+							+e.item-text Фотоальбом
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e.item-image
+							+e('img')(src='assets/images/content/student-img-2.jpg' alt='photo')
+							+e.image-fade
+						+e.item-title
+							+e.item-icon._2
+							+e.item-text Библиотека
+				+e('li').item
+					+e('a').item-link(href='#link')
+						+e.item-image
+							+e('img')(src='assets/images/content/student-img-3.jpg' alt='photo')
+							+e.image-fade
+						+e.item-title
+							+e.item-icon._3
+							+e.item-text ВидеоАРХИВ

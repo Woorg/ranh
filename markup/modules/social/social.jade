@@ -1,0 +1,18 @@
+mixin social(data)
+	+b('section').social
+		+e.in
+			+e('h2').title <span>Социальные сети</span>
+
+			+e.w
+				+e('h3').subtitle Мы в социальных сетях - <span>присоединяйся</span>
+
+				+e('ul').list
+					each v,i in {1:'facebook',2:'vk',3:'twitter',4:'linkedin',5:'instagram',6:'google plus'}
+						+e('li')(class="item _#{i}")
+							+e('a')(href="##{v}") #{v}
+
+			+b.tweet
+				+e('a').link(href='#link')
+					+e.text Дорогие друзья! <strong>Fess cinema club</strong> пройдёт в эту субботу с 10:00 в 339 аудитории! <br/>Будем смотреть фильм <span>"Стажёр" 2015 года!</span>
+
+

@@ -1,0 +1,89 @@
+.info
+	position relative
+	&__in
+		padding-top 50px
+		padding-bottom 30px
+		@extend .in
+	&__title
+		position relative
+		margin-bottom 30px
+		font-family $calibri
+		font-size 36px
+		line-height 1.2
+		text-transform uppercase
+		color #911316
+		&:after
+			position absolute
+			top 50%
+			left 0
+			margin-top -5px
+			width 100%
+			height 3px
+			content ""
+			background-color #911316
+			z-index 0
+		span
+			position relative
+			padding-right 5px
+			display inline-block
+			background #FFF
+			letter-spacing tracking(111)
+			z-index 1
+	&__content
+		max-width 1300px
+		min-width 1000px
+		clearfix()
+	&__image
+		border 1px solid #DCDCDC
+		margin-right ratio-percentage(38,1226)
+		margin-bottom 0
+		float left
+		width ratio-percentage(398,1226)
+		text-align center
+		img
+			display block
+			width 100%
+			height auto
+	&__text
+		margin-bottom 30px
+		font-family $helvetica
+		font-size 22px
+		font-weight 400
+		line-height 25px
+		color #2d2d2d
+		&:last-child
+			margin-bottom -0px
+.info__in
+	position relative
+.info__w
+	position relative
+.info-nav
+	&__link
+		position absolute
+		top 50%
+		cursor pointer
+		display block
+		border-radius 50%
+		hide-text()
+		&_back
+			display none
+			left ratio-percentage(56,1226)
+			bg($slider-nav-left)
+			@media all and (min-width: 1001px), all and (min-width: 1300px)
+				left ratio-percentage(56,1226)
+			@media all and (max-width: 1299px)
+				display none
+				left ratio-percentage(10,1226)
+		&_next
+			display none
+			right ratio-percentage(56,1226)
+			bg($slider-nav-right)
+			@media all and (min-width: 1001px), all and (min-width: 1300px)
+				right ratio-percentage(56,1226)
+			@media all and (max-width: 1100px)
+				display none
+				right ratio-percentage(10,1226)
+
+
+
+

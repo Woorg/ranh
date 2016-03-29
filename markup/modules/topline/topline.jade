@@ -1,0 +1,13 @@
+mixin topline(data)
+	+b('section').topline
+		+e.in
+			+b.lang
+				+e('a').english(href='#english')
+					+e('span').icon._eng
+					+e('span').text English
+
+			+b('a').personal(href='#')
+				+e('span').icon
+				+e('span').text Личный кабинет
+
+
